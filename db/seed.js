@@ -1,10 +1,11 @@
 const mongoose = require('./connection')
 const restaurant = require('../models/Restaurant')
 const review = require('../models/Review')
-const seedData = require('./seedData')
+const restaurantSeedData = require('./restaurantSeedData.json')
+const reviewSeedData = require('./reviewSeedData.json')
 
 restaurant.deleteMany({}).then(() => {
-    restaurant.collection.insert(seedData)
+    Restaurant.collection.insert(restaurantSeedData)
     .then(restaurants => {
         console.log(restaurants)
     })
@@ -14,7 +15,7 @@ restaurant.deleteMany({}).then(() => {
 })
 
 review.deleteMany({}).then(() => {
-    review.collection.insert(seedData)
+    Review.collection.insert(reviewSeedData)
     .then(reviews => {
         console.log(reviews)
     })
