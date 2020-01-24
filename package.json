@@ -1,0 +1,25 @@
+{
+  "name": "project3_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngumina17/project3_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngumina17/project3_backend/issues"
+  },
+  "homepage": "https://github.com/ngumina17/project3_backend#readme",
+  "dependencies": {
+    "mongoose": "^5.8.9"
+  }
+}
