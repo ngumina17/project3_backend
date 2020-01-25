@@ -16,5 +16,24 @@ router.post("/", (req, res) => {
   });
 });
 
+router.put("/:id", (req, res) => {
+  let updateReview = req.body
+  let id = req.params.id
+  review
+    .findOneAndUpdate({ _id: id }, updateReview, { new: true })
+    .then(() => {
+      review.find({}).then(reviews => res.json(reviews));
+    });
+});
+
+
+
+router.delete("/:id", (req, res) => {
+  let id = req.params.id
+  review.findOneAndDelete({_id: id }).then(() => {
+      review.find({}).then(reviews => res.json(reviews))
+  })
+})
+
 
 module.exports = router;
