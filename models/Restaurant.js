@@ -1,6 +1,7 @@
 const mongoose = require("../db/connection")
+const Schema = mongoose.Schema;
 
-const restaurantSchema = mongoose.Schema({
+const restaurantSchema = new Schema({
     name: String,
     address: String,
     city: String,
