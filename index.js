@@ -17,4 +17,8 @@ app.get("/", (req, res) => {
   res.send("hitting default route");
 });
 
-app.listen(4000, () => console.log("Running on port 4000!"));
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});

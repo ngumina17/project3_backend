@@ -2,8 +2,16 @@ const mongoose = require("mongoose");
 
 mongoose.Promise = Promise;
 
+let mongoURI = "";
+
+if (process.env.NODE_ENV === "production") {
+  mongoURI = process.env.DB_URL;
+} else {
+  mongoURI = "mongodb://localhost/restaurant_finder";
+}
+
 mongoose
-  .connect("mongodb://localhost/restaurant_finder", {
+  .connect(mongoURI, {
     useNewUrlParser: true
   })
   .then(instance =>
