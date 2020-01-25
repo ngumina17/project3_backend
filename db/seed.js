@@ -5,7 +5,7 @@ const restaurantSeedData = require('./restaurantSeedData.json')
 const reviewSeedData = require('./reviewSeedData.json')
 
 restaurant.deleteMany({}).then(() => {
-    Restaurant.collection.insert(restaurantSeedData)
+    restaurant.collection.insert(restaurantSeedData)
     .then(restaurants => {
         console.log(restaurants)
     })
@@ -15,7 +15,7 @@ restaurant.deleteMany({}).then(() => {
 })
 
 review.deleteMany({}).then(() => {
-    Review.collection.insert(reviewSeedData)
+    review.collection.insert(reviewSeedData)
     .then(reviews => {
         console.log(reviews)
     })

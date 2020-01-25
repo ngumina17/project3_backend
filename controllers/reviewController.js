@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const Review = require("../models/Review");
+const review = require("../models/Review");
 
-router.get("/reviews", (req, res) => {
-  Review.find({}).then(res => res.json());
-});
+router.get("/", (req, res) => {
+    review.find({}).then(reviews => res.json(reviews))
+})
+
 
 module.exports = router;
