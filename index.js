@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const parser = require('body-parser')
 // var cors = require('cors')
+const restaurantController = require('./controllers/restaurantController')
 
 
 
@@ -12,6 +13,8 @@ app.use(parser.json())
 app.get('/', (req,res) => {
     res.send('hitting default route')
   })
+
+app.use('/restaurants', restaurantController)
 
 
 
