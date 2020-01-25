@@ -8,7 +8,8 @@
     "stars": 93,
     "review_count": 12,
 
-    "categories": ["Japanese", "Asian", "Sushi"]
+    "categories": ["Japanese", "Asian", "Sushi"],
+    "images": "http://www.sakuraexpress.com/sitebuildercontent/sitebuilderpictures/.pond/sakurafront.jpg.w560h560.jpg"
   },
   {
     "name": "Pei Wei Asian Diner",
@@ -19,7 +20,8 @@
     "stars": 85,
     "review_count": 512,
 
-    "categories": ["Japanese", "Asian", "Sushi"]
+    "categories": ["Japanese", "Asian", "Sushi"],
+    "images": "https://www.peiwei.com/-/media/sites/main/locations/location-default.jpg"
   },
   {
     "name": "Einstein Bros. Bagels",
@@ -30,7 +32,8 @@
     "stars": 80,
     "review_count": 66,
 
-    "categories": ["breakfast", "coffee", "bakery"]
+    "categories": ["breakfast", "coffee", "bakery"],
+    "images": "https://downtownnaperville.com/wp-content/uploads/2015/09/EB2017-e1494944959178.jpg"
   },
   {
     "name": "Krispy Kreme",
@@ -41,7 +44,8 @@
     "stars": 90,
     "review_count": 1228,
 
-    "categories": ["bakery", "breakfast", "coffee"]
+    "categories": ["bakery", "breakfast", "coffee"],
+    "images": "https://tribwgntv.files.wordpress.com/2019/06/krispykremenyc.jpg?quality=85&strip=all&w=400&h=225&crop=1"
   },
   {
     "name": "KFC",
@@ -52,7 +56,8 @@
     "stars": 70,
     "review_count": 290,
 
-    "categories": ["chicken", "fast food", "drive-thru"]
+    "categories": ["chicken", "fast food", "drive-thru"],
+    "images": "https://i.insider.com/5d6677e16f24eb1a2c3cf2d7?width=1100&format=jpeg&auto=webp"
   },
   {
     "name": "Ben and Jerry's",
@@ -63,7 +68,8 @@
     "stars": 95,
     "review_count": 653,
 
-    "categories": ["ice Cream", "frozen", "desserts"]
+    "categories": ["ice Cream", "frozen", "desserts"],
+    "images": "https://media.treehugger.com/assets/images/2019/01/Ben__Jerrys_Sundae_outside_Scoop_Shop_in_Windsor_Victoria.jpg.860x0_q70_crop-scale.jpg"
   },
   {
     "name": "In-N-Out Burger",
@@ -74,7 +80,8 @@
     "stars": 97,
     "review_count": 2413,
 
-    "categories": ["hamburgers", "american", "fast food"]
+    "categories": ["hamburgers", "american", "fast food"],
+    "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGa44ZFgntyADNQd_NfOtRKJ_j8Fi3FmtxL2s0GMYrK8BxGSn72Q&s"
   },
   {
     "name": "Del Taco",
@@ -85,7 +92,8 @@
     "stars": 87,
     "review_count": 7,
 
-    "categories": ["Mexican", "tacos", "burritos"]
+    "categories": ["Mexican", "tacos", "burritos"],
+    "images": "https://live.staticflickr.com/1368/754623519_3c04f97af8_b.jpg"
   },
   {
     "name": "Giordano's Pizzeria",
@@ -96,6 +104,7 @@
     "stars": 93,
     "review_count": 7843,
 
-    "categories": ["pizza", "italian", "deep dish"]
+    "categories": ["pizza", "italian", "deep dish"],
+    "images": "https://giordanos.com/locations/custom/73806.jpg"
   }
 ]
