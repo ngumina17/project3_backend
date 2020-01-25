@@ -1,6 +1,7 @@
 const mongoose = require("../db/connection")
+const Schema = mongoose.Schema
 
-const restaurantSchema = mongoose.Schema ({
+const restaurantSchema = mongoose.Schema({
     name: String,
     address: String,
     city: String,
@@ -8,11 +9,21 @@ const restaurantSchema = mongoose.Schema ({
     postal_code: Number,
     stars: Number,
     review_count: Number,
-    categories: [{
-        type: String,
-    }]
-})
+    reviews: [
+        {
+            ref:"Review",
+            type: mongoose.Schema.Types.ObjectId
 
-const restaurant = mongoose.mode('restaurant', restaurantSchema)
+        }
+    ],
+    categories: [{
+        type: String
+    }]
+
+
+});
+
+const restaurant = mongoose.model('restaurant', restaurantSchema)
+
 
 module.exports = restaurant;

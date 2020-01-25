@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Sakura",
+    "address": "2427 53rd Ave",
+    "city": "Bettendorf",
+    "state": "IA",
+    "postal code": 52722,
+    "stars": 93,
+    "review_count": 12,
+
+    "categories": ["Japanese", "Asian", "Sushi"]
+  },
+  {
+    "name": "Pei Wei Asian Diner",
+    "address": "8700 E Raintree Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "postal code": 85260,
+    "stars": 85,
+    "review_count": 512,
+
+    "categories": ["Japanese", "Asian", "Sushi"]
+  },
+  {
+    "name": "Einstein Bros. Bagels",
+    "address": "1650 Arapahoe St",
+    "city": "Golden",
+    "state": "CO",
+    "postal code": 80401,
+    "stars": 80,
+    "review_count": 66,
+
+    "categories": ["breakfast", "coffee", "bakery"]
+  },
+  {
+    "name": "Krispy Kreme",
+    "address": "9150 S Western Ave",
+    "city": "Evergreen Park",
+    "state": "IL",
+    "postal code": 60805,
+    "stars": 90,
+    "review_count": 1228,
+
+    "categories": ["bakery", "breakfast", "coffee"]
+  },
+  {
+    "name": "KFC",
+    "address": "208 W Locust St",
+    "city": "Davenport",
+    "state": "IA",
+    "postal code": 52803,
+    "stars": 70,
+    "review_count": 290,
+
+    "categories": ["chicken", "fast food", "drive-thru"]
+  },
+  {
+    "name": "Ben and Jerry's",
+    "address": "36 Church St",
+    "city": "Burlington",
+    "state": "VT",
+    "postal code": 15401,
+    "stars": 95,
+    "review_count": 653,
+
+    "categories": ["ice Cream", "frozen", "desserts"]
+  },
+  {
+    "name": "In-N-Out Burger",
+    "address": "9188 E Stockton Blvd",
+    "city": "Elk Grove",
+    "state": "CA",
+    "postal code": 95624,
+    "stars": 97,
+    "review_count": 2413,
+
+    "categories": ["hamburgers", "american", "fast food"]
+  },
+  {
+    "name": "Del Taco",
+    "address": "38434 E Yermo Rd",
+    "city": "Yermo",
+    "state": "CA",
+    "postal code": 92398,
+    "stars": 87,
+    "review_count": 7,
+
+    "categories": ["Mexican", "tacos", "burritos"]
+  },
+  {
+    "name": "Giordano's Pizzeria",
+    "address": "730 N Rush St",
+    "city": "Chicago",
+    "state": "IL",
+    "postal code": 60611,
+    "stars": 93,
+    "review_count": 7843,
+
+    "categories": ["pizza", "italian", "deep dish"]
+  }
+]

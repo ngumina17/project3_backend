@@ -1,11 +1,11 @@
-const mongoose = require("../db/connection")
+const mongoose = require("../db/connection");
+const Schema = mongoose.Schema;
 
-const reviewSchema = mongoose.Schema ({
-    rating: Number,
-    text: String,
+const reviewSchema = new mongoose.Schema({
+  rating: Number,
+  text: String
+});
 
-})
+const Review = mongoose.model("Review", reviewSchema);
 
-const review = mongoose.model("review", reviewSchema)
-
-module.exports = review
+module.exports = Review;
