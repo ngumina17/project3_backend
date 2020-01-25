@@ -9,9 +9,18 @@ const restaurantSchema = mongoose.Schema({
     postal_code: Number,
     stars: Number,
     review_count: Number,
+    reviews: [
+        {
+            ref:"Review",
+            type: mongoose.Schema.Types.ObjectId
+
+        }
+    ],
     categories: [{
         type: String
     }]
+
+
 });
 
 const restaurant = mongoose.model('restaurant', restaurantSchema)
