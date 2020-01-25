@@ -6,4 +6,6 @@ router.get("/", (req, res) => {
     restaurant.find({}).then(restaurants => res.json(restaurants))
 })
 
+
+
 module.exports = router
