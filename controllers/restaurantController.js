@@ -12,13 +12,13 @@ router.get("/:id", (req, res) => {
   );
 });
 
-router.get("/:name", (req, res) => {
+router.get("/name/:name", (req, res) => {
   Restaurant.findOne({ name: req.params.name }).then(restaurant =>
     res.json(restaurant)
   );
 });
 
-router.get("/:city", (req, res) => {
+router.get("/city/:city", (req, res) => {
   Restaurant.findOne({ city: req.params.city }).then(restaurant =>
     res.json(restaurant)
   );
