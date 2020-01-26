@@ -15,7 +15,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   let newRestaurant = req.body;
   Restaurant.create(newRestaurant)
-    .then(restaurant.find({}))
+    .then(Restaurant.find({}))
     .then(restaurants => res.json(restaurants));
 });
 
