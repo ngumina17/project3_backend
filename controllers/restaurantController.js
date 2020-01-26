@@ -9,6 +9,12 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
     restaurant.find({_id: req.params.id}).then(restaurants => res.json(restaurants))
 })
+router.get("/:id", (req, res) => {
+    restaurant.find({_id: req.params.id}).then(restaurants => res.json(restaurants))
+})
+router.get("/:id", (req, res) => {
+    restaurant.find({_id: req.params.id}).then(restaurants => res.json(restaurants))
+})
 
 router.post("/", (req, res) => {
     let newRestaurant = req.body;
