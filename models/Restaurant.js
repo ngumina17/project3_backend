@@ -23,6 +23,6 @@ const restaurantSchema = mongoose.Schema({
   images: String
 });
 
-const restaurant = mongoose.model("restaurant", restaurantSchema);
+const Restaurant = mongoose.model("Restaurant", restaurantSchema);
 
-module.exports = restaurant;
+module.exports = Restaurant;
