@@ -4,7 +4,7 @@
     "address": "2427 53rd Ave",
     "city": "Bettendorf",
     "state": "IA",
-    "postal code": 52722,
+    "postal code": "52722",
     "stars": 93,
     "review_count": 12,
 
@@ -16,7 +16,7 @@
     "address": "8700 E Raintree Dr",
     "city": "Scottsdale",
     "state": "AZ",
-    "postal code": 85260,
+    "postal code": "85260",
     "stars": 85,
     "review_count": 512,
 
@@ -28,7 +28,7 @@
     "address": "1650 Arapahoe St",
     "city": "Golden",
     "state": "CO",
-    "postal code": 80401,
+    "postal code": "80401",
     "stars": 80,
     "review_count": 66,
 
@@ -40,7 +40,7 @@
     "address": "9150 S Western Ave",
     "city": "Evergreen Park",
     "state": "IL",
-    "postal code": 60805,
+    "postal code": "60805",
     "stars": 90,
     "review_count": 1228,
 
@@ -52,7 +52,7 @@
     "address": "208 W Locust St",
     "city": "Davenport",
     "state": "IA",
-    "postal code": 52803,
+    "postal code": "52803",
     "stars": 70,
     "review_count": 290,
 
@@ -64,7 +64,7 @@
     "address": "36 Church St",
     "city": "Burlington",
     "state": "VT",
-    "postal code": 15401,
+    "postal code": "15401",
     "stars": 95,
     "review_count": 653,
 
@@ -76,7 +76,7 @@
     "address": "9188 E Stockton Blvd",
     "city": "Elk Grove",
     "state": "CA",
-    "postal code": 95624,
+    "postal code": "95624",
     "stars": 97,
     "review_count": 2413,
 
@@ -88,7 +88,7 @@
     "address": "38434 E Yermo Rd",
     "city": "Yermo",
     "state": "CA",
-    "postal code": 92398,
+    "postal code": "92398",
     "stars": 87,
     "review_count": 7,
 
@@ -100,7 +100,7 @@
     "address": "730 N Rush St",
     "city": "Chicago",
     "state": "IL",
-    "postal code": 60611,
+    "postal code": "60611",
     "stars": 93,
     "review_count": 7843,
 
