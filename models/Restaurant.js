@@ -6,7 +6,7 @@ const restaurantSchema = mongoose.Schema({
   address: String,
   city: String,
   state: String,
-  postal_code: Number,
+  postal_code: String,
   stars: Number,
   review_count: Number,
   reviews: [
