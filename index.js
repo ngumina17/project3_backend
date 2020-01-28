@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const parser = require("body-parser");
-// var cors = require('cors')
+var cors = require('cors')
 
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
-// app.use(cors())
+app.use(cors())
 
 const restaurantController = require("./controllers/restaurantController");
 const reviewController = require("./controllers/reviewController");
