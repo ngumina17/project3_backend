@@ -6,6 +6,10 @@ router.get("/", (req, res) => {
   Restaurant.find({}).then(restaurants => res.json(restaurants));
 });
 
+router.options("/", (req, res) => {
+  Restaurant.find({}).then(restaurants => res.json(restaurants));
+});
+
 router.get("/:id", (req, res) => {
   Restaurant.findOne({ _id: req.params.id }).then(restaurant =>
     res.json(restaurant)
@@ -29,7 +33,7 @@ router.get("/city/:city", (req, res) => {
 router.get("/zip/:zip", (req, res) => {
   let searchZip = req.params.postal_code;
   Restaurant.findOne({
-    zip: { $regex: new RegExp(searchZip, "i") }
+    zip: searchZip
   }).then(restaurant => res.json(restaurant));
 });
 
@@ -47,6 +51,8 @@ router.put("/:id", (req, res) => {
     res.json(restaurant);
   });
 });
+
+router.put("/:id");
 
 router.delete("/:id", (req, res) => {
   let id = req.params.id;
