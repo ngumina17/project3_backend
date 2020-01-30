@@ -45,45 +45,16 @@ router.post("/", (req, res) => {
     .then(restaurants => res.json(restaurants));
 });
 
-// router.put("/:id", (req, res) => {
-//   Restaurant.findByIdAndUpdate(req.params.id, req.body, {
-//     new: true
-//   }).then(restaurant => {
-//     res.json(restaurant);
-//   });
-// });
 
-// router.put("/:id", (req, res) => {
-//     let restaurantID = req.params.id;
-//     Restaurant.findOneAndUpdate({_id: restaurantID}, req.body).then(singleRestaurant => {
-//     Review.create(req.body).then(reviews => {
-//              singleRestaurant.reviews.unshift([reviews]);
-//             }).then(() => {
 
-//                 singleRestaurant.save();
-//              let x = _id
-
-//              res.json(x)
-//                 // res.json(singleRestaurant);
-
-//             })
-//         });
-       
-    
-//     });
-//   ;
 
 router.put("/:id", (req, res) => {
-    //   res.json({ status: "ok" });
-    // grabs the user data from the user key in req.body
+
       const newReview = req.body
-    // grabs the bookmark data from the bookmark key in req.body
+ 
       const restaurant = req.params.id
       console.log(restaurant)
-      // creates the user
-    
-   
-          // creates the bookmark
+  
         Restaurant.find({_id: restaurant}).then(restaurants => {
             
             Review.create(newReview).then(reviews => {
@@ -92,27 +63,11 @@ router.put("/:id", (req, res) => {
                 reviews.save()
                 restaurants[0].save()
                 res.json(restaurants)
-        //     // add the bookmark id to the users favorites array
-        //     reviews.restaurant.push(restaurant._id)
-        //     // add the user id to the bookmarks favorited array
-        //     restaurant.reviews.push(reviews._id)
-        //     .then(() => {
 
-        //         // save changes to user
-        //         reviews.save()
-        //         // save changes to bookmark
-        //         restaurants.save()
-        //         // returns the user as json
-        //         res.json(restaurants)
-        //     })
-        // })
       })
     });
 })
 
-
-
-router.put("/:id");
 
 router.delete("/:id", (req, res) => {
   let id = req.params.id;
