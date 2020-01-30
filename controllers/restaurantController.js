@@ -7,6 +7,10 @@ router.get("/", (req, res) => {
   Restaurant.find({}).then(restaurants => res.json(restaurants));
 });
 
+router.options("/", (req, res) => {
+  Restaurant.find({}).then(restaurants => res.json(restaurants));
+});
+
 router.get("/:id", (req, res) => {
   Restaurant.findOne({ _id: req.params.id }).then(restaurant =>
     res.json(restaurant)
@@ -14,15 +18,24 @@ router.get("/:id", (req, res) => {
 });
 
 router.get("/name/:name", (req, res) => {
-  Restaurant.findOne({ name: req.params.name }).then(restaurant =>
-    res.json(restaurant)
-  );
+  let newName = req.params.name;
+  Restaurant.findOne({
+    name: { $regex: new RegExp(newName, "i") }
+  }).then(restaurant => res.json(restaurant));
 });
 
 router.get("/city/:city", (req, res) => {
-  Restaurant.findOne({ city: req.params.city }).then(restaurant =>
-    res.json(restaurant)
-  );
+  let searchCity = req.params.city;
+  Restaurant.findOne({
+    city: { $regex: new RegExp(searchCity, "i") }
+  }).then(restaurant => res.json(restaurant));
+});
+
+router.get("/zip/:zip", (req, res) => {
+  let searchZip = req.params.postal_code;
+  Restaurant.findOne({
+    zip: searchZip
+  }).then(restaurant => res.json(restaurant));
 });
 
 router.post("/", (req, res) => {
@@ -98,6 +111,8 @@ router.put("/:id", (req, res) => {
 })
 
 
+
+router.put("/:id");
 
 router.delete("/:id", (req, res) => {
   let id = req.params.id;
