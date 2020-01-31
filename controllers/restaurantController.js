@@ -58,7 +58,7 @@ router.put("/:id", (req, res) => {
         Restaurant.find({_id: restaurant}).then(restaurants => {
             
             Review.create(newReview).then(reviews => {
-                restaurants[0].reviews.push(reviews._id)
+                restaurants[0].reviews.unshift(reviews._id)
                 reviews.restaurant = restaurants._id
                 reviews.save()
                 restaurants[0].save()
